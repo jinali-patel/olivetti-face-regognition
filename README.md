@@ -38,10 +38,17 @@ and preserves the weights with the highest validation accuracy.
 
 An internet connection is required to download the dataset.
 
-## Current Status
-The CNN checkpoint code has been corrected. Saved outputs and
-previously recorded results require a fresh run before they can
-be treated as results of the corrected implementation.
+## Results
+
+| Model | Test Accuracy | Macro F1-score |
+|-------|--------------:|---------------:|
+| LDA | 97.50% | 0.9742 |
+| SVM | 92.50% | 0.9075 |
+| CNN | 80.00% | 0.7893 |
+
+Results use the same 80 test images. LDA and SVM use 320
+training images; the CNN uses 240 training images and
+80 validation images.
 
 ## Limitations
 This comparison uses a small, controlled dataset and different
